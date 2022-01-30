@@ -44,11 +44,11 @@ const checkbox = document.getElementById('checkbox');
 
 enterNumberButton.addEventListener('click', () => {
     if (checkbox.checked) {
-        console.log('Calculate with Web Worker:')
+        console.log('Calculating with Web Worker:')
         let number = +inputNumber.value;
         worker.postMessage(number + 20);
     } else {
-        console.log('Calculate without Web Worker:')
+        console.log('Calculating without Web Worker:')
         let number = +inputNumber.value;
         const result = showPI(number + 20);
         console.log(result);
