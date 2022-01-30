@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Workers Demo</title>
+    <style>
+        body{
+            font-size: 1.5em;
+        }
+        div {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        #textarea-label {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="enter-number">Enter number of digits in PI</label>
+        <input type="number" value="50000" id="input-number">
+        <button id="enter-number-button">Start</button>
+        <span>Result will be shown in console</span>
+    </div>
+    <div>
+        <label for="checkbox">Use Web Worker</label>
+        <input type="checkbox" name="checkbox" id="checkbox">
+    </div>
+    <div>
+        <label for="just-text" id="textarea-label">If Web Worker is used, you can write whatever you want here when PI
+            is calculated</label>
+        <textarea name="just-text" rows="5" cols="50">Try to write something:</textarea>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+
+</html>
